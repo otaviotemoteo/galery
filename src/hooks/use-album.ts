@@ -1,10 +1,10 @@
 import { toast } from "sonner";
-import type { AlbumNewFormSchema } from "../schemas";
-import { api } from "../../../helpers/api";
-import type { Album } from "../models/album";
+import type { AlbumNewFormSchema } from "../types/schemas";
+import { api } from "../helpers/api";
+import type { Album } from "../types/album";
 import { useQueryClient } from "@tanstack/react-query";
-import usePhotos from "../../photos/hooks/use-photos";
-import usePhotoAlbums from "../../photos/hooks/use-photos-album";
+import usePhotos from "./use-photos";
+import usePhotoAlbums from "./use-photos-album";
 
 export default function useAlbum() {
   const queryClient = useQueryClient();

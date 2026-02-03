@@ -7,19 +7,19 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTrigger,
-} from "../../../components/dialog";
-import Button from "../../../components/button";
-import InputText from "../../../components/input-text";
-import Alert from "../../../components/alert";
-import InputSingleFile from "../../../components/input-single-file";
-import ImagePreview from "../../../components/image-preview";
-import Text from "../../../components/text";
-import Skeleton from "../../../components/skeleton";
+} from "../dialog";
+import Button from "../button";
+import InputText from "../input-text";
+import Alert from "../alert";
+import InputSingleFile from "../input-single-file";
+import ImagePreview from "../image-preview";
+import Text from "../text";
+import Skeleton from "../skeleton";
 import { useForm } from "react-hook-form";
-import useAlbums from "../../albums/hooks/use-albums";
-import { photoNewFormSchema, type PhotoNewFormSchema } from "../schemas";
+import useAlbums from "../../hooks/use-albums";
+import { photoNewFormSchema, type PhotoNewFormSchema } from "../../types/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
-import usePhoto from "../hooks/use-photo";
+import usePhoto from "../../hooks/use-photo";
 
 interface PhotoNewDialogProps {
   trigger: React.ReactNode;

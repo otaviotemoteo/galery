@@ -1,10 +1,10 @@
 import type React from "react";
 import Button from "../button";
 import Text from "../text";
-import type { Album } from "../../contexts/albums/models/album";
+import type { Album } from "../../types/album";
 import cx from "classnames";
 import Skeleton from "../skeleton";
-import usePhotos from "../../contexts/photos/hooks/use-photos";
+import usePhotos from "../../hooks/use-photos";
 
 interface AlbumsFilterProps extends React.ComponentProps<"div"> {
   albums: Album[];

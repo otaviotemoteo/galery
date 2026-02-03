@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetcher } from "../../../helpers/api";
-import type { Photo } from "../models/photo";
+import { fetcher } from "../helpers/api";
+import type { Photo } from "../types/photo";
 import { useQueryState, createSerializer, parseAsString } from "nuqs";
 
 const toSearchParams = createSerializer({

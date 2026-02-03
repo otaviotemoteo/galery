@@ -1,7 +1,7 @@
 
 import { useQuery } from "@tanstack/react-query";
-import type { Album } from "../models/album";
-import { fetcher } from "../../../helpers/api";
+import type { Album } from "../types/album";
+import { fetcher } from "../helpers/api";
 
 export default function useAlbums() {
   const { data, isLoading } = useQuery<Album[]>({

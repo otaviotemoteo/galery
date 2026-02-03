@@ -3,9 +3,9 @@ import Divider from "../divider";
 import InputCheckbox from "../input-checkbox";
 import Skeleton from "../skeleton";
 import Text from "../text";
-import usePhotoAlbums from "../../contexts/photos/hooks/use-photos-album";
-import type { Photo } from "../../contexts/photos/models/photo";
-import type { Album } from "../../contexts/albums/models/album";
+import usePhotoAlbums from "../../hooks/use-photos-album";
+import type { Photo } from "../../types/photo";
+import type { Album } from "../../types/album";
 
 interface AlbumsListSelectableProps {
   loading?: boolean;

@@ -1,8 +1,8 @@
 import type React from "react";
 import { tv } from "tailwind-variants";
-import ImagePreview from "../../../components/image-preview";
+import ImagePreview from "../image-preview";
 import { useState } from "react";
-import InputCheckbox from "../../../components/input-checkbox";
+import InputCheckbox from "../input-checkbox";
 
 export const photoImageSelectableVariants = tv({
   base: `

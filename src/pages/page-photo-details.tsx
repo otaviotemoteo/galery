@@ -1,14 +1,14 @@
 import Container from "../components/container";
 import Text from "../components/text";
 import Skeleton from "../components/skeleton";
-import PhotosNavigator from "../contexts/photos/components/photos-navigator";
+import PhotosNavigator from "../components/photo/photos-navigator";
 import ImagePreview from "../components/image-preview";
 import Button from "../components/button";
 import AlbumsListSelectable from "../components/album/albums-list-selectable";
-import useAlbums from "../contexts/albums/hooks/use-albums";
+import useAlbums from "../hooks/use-albums";
 import { useParams } from "react-router";
-import usePhoto from "../contexts/photos/hooks/use-photo";
-import type { Photo } from "../contexts/photos/models/photo";
+import usePhoto from "../hooks/use-photo";
+import type { Photo } from "../types/photo";
 import React from "react";
 
 export default function PagePhotoDetails() {

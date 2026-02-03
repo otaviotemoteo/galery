@@ -1,9 +1,9 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { api, fetcher } from "../../../helpers/api";
-import type { Photo } from "../models/photo";
-import type { PhotoNewFormSchema } from "../schemas";
+import { api, fetcher } from "../helpers/api";
+import type { Photo } from "../types/photo";
+import type { PhotoNewFormSchema } from "../types/schemas";
 import { toast } from "sonner";
-import usePhotoAlbums from "../hooks/use-photos-album";
+import usePhotoAlbums from "./use-photos-album";
 import { useNavigate } from "react-router";
 
 interface PhotoDetailResponse extends Photo {
