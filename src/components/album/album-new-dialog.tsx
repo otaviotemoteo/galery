@@ -1,4 +1,4 @@
-import Button from "../../../components/button";
+import Button from "../../button";
 import {
   Dialog,
   DialogBody,
@@ -7,18 +7,18 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTrigger,
-} from "../../../components/dialog";
-import InputText from "../../../components/input-text";
-import Text from "../../../components/text";
+} from "../../dialog";
+import InputText from "../../input-text";
+import Text from "../../text";
 import SelectCheckboxIllustration from "../../../assets/images/select-checkbox.svg?react";
-import Skeleton from "../../../components/skeleton";
-import PhotoImageSelectable from "../../photos/components/photo-image-selectable";
-import usePhotos from "../../photos/hooks/use-photos";
+import Skeleton from "../../skeleton";
+import PhotoImageSelectable from "../../../contexts/photos/components/photo-image-selectable";
+import usePhotos from "../../../contexts/photos/hooks/use-photos";
 import { useForm } from "react-hook-form";
-import { albumNewFormSchema, type AlbumNewFormSchema } from "../schemas";
+import { albumNewFormSchema, type AlbumNewFormSchema } from "../../../contexts/albums/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
-import useAlbum from "../hooks/use-album";
+import useAlbum from "../../../contexts/albums/hooks/use-album";
 
 interface AlbumNewDialogProps {
   trigger: React.ReactNode;

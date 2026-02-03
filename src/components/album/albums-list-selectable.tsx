@@ -1,11 +1,11 @@
 import React from "react";
-import Divider from "../../../components/divider";
-import InputCheckbox from "../../../components/input-checkbox";
-import Skeleton from "../../../components/skeleton";
-import Text from "../../../components/text";
-import usePhotoAlbums from "../../photos/hooks/use-photos-album";
-import type { Photo } from "../../photos/models/photo";
-import type { Album } from "../models/album";
+import Divider from "../divider";
+import InputCheckbox from "../input-checkbox";
+import Skeleton from "../skeleton";
+import Text from "../text";
+import usePhotoAlbums from "../../contexts/photos/hooks/use-photos-album";
+import type { Photo } from "../../contexts/photos/models/photo";
+import type { Album } from "../../contexts/albums/models/album";
 
 interface AlbumsListSelectableProps {
   loading?: boolean;

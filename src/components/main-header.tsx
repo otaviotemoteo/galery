@@ -6,7 +6,7 @@ import Button from "./button";
 import PhotosSearch from "./photos-search";
 import Divider from "./divider";
 import PhotoNewDialog from "../contexts/photos/components/photo-new-dialog";
-import AlbumNewDialog from "../contexts/albums/components/album-new-dialog";
+import AlbumNewDialog from "./album/components/album-new-dialog";
 
 interface MainHeaderProps extends React.ComponentProps<typeof Container> {}
 
